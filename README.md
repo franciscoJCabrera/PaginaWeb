@@ -1,7 +1,7 @@
 # PaginaWeb
 Desarrollo de mi primera pagina web de forma autodidacta, desarrollando tanto Frontend como Backend
 
-<<<<<<< HEAD
+
 ## Tecnologías
 
 - HTML
@@ -23,5 +23,5 @@ En este repositorio se encuentra el código fuente de la aplicación, en el dire
 
 ## Autor
 
-[Francisco José Marín](https://github.com/franjosem)
+[Francisco José Cabrera Bermejo](https://github.com/franciscoJCabrera)
 
