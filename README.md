@@ -24,7 +24,4 @@ En este repositorio se encuentra el código fuente de la aplicación, en el dire
 ## Autor
 
 [Francisco José Marín](https://github.com/franjosem)
-=======
-## Tecnologias
 
->>>>>>> 0a7ca03a8603794b09e8fb5bc499bc197991c4d0
