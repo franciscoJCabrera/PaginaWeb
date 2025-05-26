@@ -17,7 +17,11 @@ Inicialmente se va a desarrollar la parte del backend, para establecer los datos
 
 ### Frontend
 
-En este repositorio se encuentra el código fuente de la página web, en el directorio `src` se encuentran los archivos HTML, CSS y JavaScript.
+El Frontend se va a desarrollar con React, concretamente con Vite que es un entorno de desarrollo moderno, simple y limpio.   
+
+Hemos creado el proyecto con `npx create vite@latest`, en el archivo `vite.config.js` se encuentra la configuración de Vite y en el archivo `index.html` se encuentra el código HTML del proyecto. Se ha establecido como nombre de proyecto "frontend", con framework "React" y la variante "JavaScript".
+
+Para poder acceder a nuestra pagina web tendremos que hacer un `npm run dev` y acceder a `http://localhost:5173/`.
 
 ### Backend
 
