@@ -23,6 +23,17 @@ En este repositorio se encuentra el código fuente de la página web, en el dire
 
 En este repositorio se encuentra el código fuente de la aplicación, en el directorio `src` se encuentran los archivos PHP y MySQL.
 
+### Base de datos
+
+La base de datos se encuentra en el directorio `BaseDatos`, en el archivo `schema.prisma` se encuentra la estructura de la base de datos y en el archivo `dev.db` se encuentra la base de datos en formato SQLite.
+Se ha desarrollado una base de datos en memoria para que se puedan probar las funcionalidades de la aplicación, sin embargo, para el despliegue en producción se recomienda utilizar una base de datos en un servidor. Para poder ver los datos en la interfaz visual se recomienda utilizar los siguientes comandos:
+- Para crear las tablas segun los modelos de la base de datos: `npx prisma db push`
+- Para ver los datos de la base de datos en la interfaz visual: `npx prisma studio`
+
+## Despliegue
+
+Para desplegar la aplicación en producción se recomienda utilizar un servidor web, como por ejemplo [Vercel](https://vercel.com/).
+
 ## Autor
 
 [Francisco José Cabrera Bermejo](https://github.com/franciscoJCabrera)

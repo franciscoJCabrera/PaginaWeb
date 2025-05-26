@@ -9,8 +9,28 @@ generator client {
   output   = "../generated/prisma"
 }
 
+// Definimos la conexión a la base de datos, empleamos el proveedor de SQLite para tener una base de datos en memoria de forma temporal
 datasource db {
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
+  provider = "sqlite"
+  url      = "file:dev.db?mode=memory&cache=shared"
+}
+
+// Aqui definimos los modelos que queremos usar en nuestra aplicación
+model User {
+  id        Int      @id @default(autoincrement())
+  name      String
+  email     String   @unique
+  password  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  Pedidos   Pedido[] @relation("UserPedidos") // Relacion inversa con el modelo Pedido
+}
+
+model Pedido{
+  id        Int      @id @default(autoincrement())
+  nombre    String
+  email     String
+  autorId   Int
+  autor     User     @relation("UserPedidos", fields: [autorId], references: [id])
 }
 
