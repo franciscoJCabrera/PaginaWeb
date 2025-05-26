@@ -23,7 +23,7 @@ model User {
   password  String
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
-  Pedidos   Pedido[] @relation("UserPedidos") // Relacion inversa con el modelo Pedido
+  pedidos   Pedido[] @relation("UserPedidos") // Relacion inversa con el modelo Pedido
 }
 
 model Pedido {

@@ -960,11 +960,11 @@ export namespace Prisma {
    */
 
   export type UserCountOutputType = {
-    Pedidos: number
+    pedidos: number
   }
 
   export type UserCountOutputTypeSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    Pedidos?: boolean | UserCountOutputTypeCountPedidosArgs
+    pedidos?: boolean | UserCountOutputTypeCountPedidosArgs
   }
 
   // Custom InputTypes
@@ -1196,7 +1196,7 @@ export namespace Prisma {
     password?: boolean
     createdAt?: boolean
     updatedAt?: boolean
-    Pedidos?: boolean | User$PedidosArgs<ExtArgs>
+    pedidos?: boolean | User$pedidosArgs<ExtArgs>
     _count?: boolean | UserCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["user"]>
 
@@ -1229,7 +1229,7 @@ export namespace Prisma {
 
   export type UserOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "name" | "email" | "password" | "createdAt" | "updatedAt", ExtArgs["result"]["user"]>
   export type UserInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    Pedidos?: boolean | User$PedidosArgs<ExtArgs>
+    pedidos?: boolean | User$pedidosArgs<ExtArgs>
     _count?: boolean | UserCountOutputTypeDefaultArgs<ExtArgs>
   }
   export type UserIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {}
@@ -1238,7 +1238,7 @@ export namespace Prisma {
   export type $UserPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     name: "User"
     objects: {
-      Pedidos: Prisma.$PedidoPayload<ExtArgs>[]
+      pedidos: Prisma.$PedidoPayload<ExtArgs>[]
     }
     scalars: $Extensions.GetPayloadResult<{
       id: number
@@ -1641,7 +1641,7 @@ export namespace Prisma {
    */
   export interface Prisma__UserClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
     readonly [Symbol.toStringTag]: "PrismaPromise"
-    Pedidos<T extends User$PedidosArgs<ExtArgs> = {}>(args?: Subset<T, User$PedidosArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$PedidoPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+    pedidos<T extends User$pedidosArgs<ExtArgs> = {}>(args?: Subset<T, User$pedidosArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$PedidoPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
     /**
      * Attaches callbacks for the resolution and/or rejection of the Promise.
      * @param onfulfilled The callback to execute when the Promise is resolved.
@@ -2063,9 +2063,9 @@ export namespace Prisma {
   }
 
   /**
-   * User.Pedidos
+   * User.pedidos
    */
-  export type User$PedidosArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type User$pedidosArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
      * Select specific fields to fetch from the Pedido
      */
@@ -3273,7 +3273,7 @@ export namespace Prisma {
     password?: StringFilter<"User"> | string
     createdAt?: DateTimeFilter<"User"> | Date | string
     updatedAt?: DateTimeFilter<"User"> | Date | string
-    Pedidos?: PedidoListRelationFilter
+    pedidos?: PedidoListRelationFilter
   }
 
   export type UserOrderByWithRelationInput = {
@@ -3283,7 +3283,7 @@ export namespace Prisma {
     password?: SortOrder
     createdAt?: SortOrder
     updatedAt?: SortOrder
-    Pedidos?: PedidoOrderByRelationAggregateInput
+    pedidos?: PedidoOrderByRelationAggregateInput
   }
 
   export type UserWhereUniqueInput = Prisma.AtLeast<{
@@ -3296,7 +3296,7 @@ export namespace Prisma {
     password?: StringFilter<"User"> | string
     createdAt?: DateTimeFilter<"User"> | Date | string
     updatedAt?: DateTimeFilter<"User"> | Date | string
-    Pedidos?: PedidoListRelationFilter
+    pedidos?: PedidoListRelationFilter
   }, "id" | "email">
 
   export type UserOrderByWithAggregationInput = {
@@ -3383,7 +3383,7 @@ export namespace Prisma {
     password: string
     createdAt?: Date | string
     updatedAt?: Date | string
-    Pedidos?: PedidoCreateNestedManyWithoutAutorInput
+    pedidos?: PedidoCreateNestedManyWithoutAutorInput
   }
 
   export type UserUncheckedCreateInput = {
@@ -3393,7 +3393,7 @@ export namespace Prisma {
     password: string
     createdAt?: Date | string
     updatedAt?: Date | string
-    Pedidos?: PedidoUncheckedCreateNestedManyWithoutAutorInput
+    pedidos?: PedidoUncheckedCreateNestedManyWithoutAutorInput
   }
 
   export type UserUpdateInput = {
@@ -3402,7 +3402,7 @@ export namespace Prisma {
     password?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    Pedidos?: PedidoUpdateManyWithoutAutorNestedInput
+    pedidos?: PedidoUpdateManyWithoutAutorNestedInput
   }
 
   export type UserUncheckedUpdateInput = {
@@ -3412,7 +3412,7 @@ export namespace Prisma {
     password?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
-    Pedidos?: PedidoUncheckedUpdateManyWithoutAutorNestedInput
+    pedidos?: PedidoUncheckedUpdateManyWithoutAutorNestedInput
   }
 
   export type UserCreateManyInput = {
