@@ -21,7 +21,9 @@ En este repositorio se encuentra el código fuente de la página web, en el dire
 
 ### Backend
 
-En este repositorio se encuentra el código fuente de la aplicación, en el directorio `src` se encuentran los archivos PHP y MySQL.
+El backend se encuentra en el directorio `Backend`, en el archivo `server.js` se encuentra el código de la API REST y en el archivo `index.js` se encuentra el código de la API de Node.js. Ha sido lanzado en un servidor Express, actualmente cuenta con rutas para crear, consultar y eliminar usuarios y pedidos. 
+
+El servidor es lanzado con el comando `node server.js` y se puede acceder a través de `http://localhost:3000`.
 
 ### Base de datos
 
